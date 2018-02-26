@@ -1,0 +1,77 @@
+SQL
+
+A - Cliente
+
+cadastro do usuario - cpf, nome, email, senha, nascimento, endereco, cidade, estado, cep, celular e telefone fixo.
+
+login - email e senha.
+
+busca de produto.
+
+busca de categoria.
+
+pagina com informacoes do produto - id, nome, categoria e preco e opcao de compra.
+
+Eletronicos. mesmo sql id, nome, especificacoes
+televisao - Smart TV LED Philips 43" 43PFG5102/78 com Conversor Digital Wi-Fi integrado 2 USB 3 HDMI.
+purificador de agua - Purificador de Água Consul Eletrônico CPB34AS Refrigerado Bivolt – Classe A e Tripla Filtragem.
+ar condicionado - Ar Condicionado de Janela Electrolux EE07F 7.500 BTUs Frio Eletrônico.
+
+Livros. id, Nome, Autor.
+As Crônicas De Nárnia - Volume Único - Lewis,Clive Staples
+A Arte da Guerra - Os 13 Capítulos Originais - Ed. Completa - Tzu, Sun
+Mitologia Nordica - Gaiman,Neil
+
+Informatica. mesmo sql id, nome, especificacoes.
+COMPUTADOR PICHAU GAMER READY, I5-7400, GEFORCE GTX 1060 3GB, RAM 8GB, HD 1TB, 500W, SI-5100.
+Notebook Gamer Avell G1513 MX5 Intel Core i5 8GB (GeForce GTX 1050TI) SSHD 1TB Teclado MEC
+Tela LCD LCD TFT Tipo de iluminação traseira Sistema W-LED Dimensões do painel 21,5 pol / 54,6 cm Área de exibição de alto desempenho 476,64 (A) x 268,11 (V) Proporção da imagem 16:9 Ótima resolução 1920 x 1080 a 60 Hz Tempo de resposta (típico) 5 ms Brilho 200 cd/m² SmartContrast 10.000.000:1 Proporção de contraste (típica) 600:1 Pixel pitch 0,248 x 0,248 mm Ângulo de visão 90° (H) / 65° (V) @ C/R > 10 Cores da tela 16,7 m Frequência de varredura 30 - 83 kHz (A) / 56 - 76 Hz (V) sRGB SIM Base de apoio Inclinação -5/20 grau Alimentação Aparelho ligado 15,61 W (típ.) (Método de teste EnergyStar 6.0) Modo de espera 0,5 W Aparelho desligado 0,5 W LED de energia Operação - branco Modo de espera - branco (piscando) Fonte de alimentação Embutido 100 - 240 VAC, 50 - 60 Hz Peso Produto com suporte (kg) 2,61 kg Produto sem suporte (kg) 2,35 kg Produto com embalagem (kg) 3,87 kg Sustentabilidade Meio ambiente e energia EnergyStar 6.0 Prata no EPEAT RoHS Sem chumbo Livre de mercúrio Embalagem feita de material reciclável 100 % Gabinete Cor Preta Acabamento Superfino (bisel frontal) / Textura (tampa traseira) Conectividade Entrada de sinal DVI-D (digital, HDCP) VGA (analógica) Entrada de sincronização Sincronismo separado Sincronismo ativado, verde Praticidade Praticidade para o usuário Automático/Para baixo 4:3 wide/Para cima Brilho/Voltar Menu/OK Lig/Desl Idiomas do OSD Português (Brasil) Tcheco Holandês Português Finlandês Francês Alemão Grego Húngaro Italiano Japonês Coreano Polonês Português Russo Chinês simplificado Espanhol Sueco Chinês tradicional Turco Ucraniano Outras facilidades Trava Kensington Instalação padrão VESA (100 x 100 mm) Compatibilidade Plug and Play DDC/CI Mac OS X sRGB Windows 7 Windows 8 Dimensões Produto com suporte (mm) 503 x 376 x 213 mm Produto sem suporte (mm) 503 x 316 x 50 mm Embalagem em mm (L x A x P) 555 x 414 x 107 mm Condições de operação Faixa de temperatura (operação) 0 °C a 40 °C °C Faixa de temperatura (armazenamento) -20 °C a 60 °C °C Umidade relativa 20%-80 % Altitude Operação: 3.658 m, Não operação: 12.192 m MTBF 30.000 hora(s) Conformidade e padrões Aprovações de órgãos reguladores BSMI Marca CE FCC Classe B GOST PSB SASO SEMKO TUV/ISO9241-307 cETLus WEEE.
+
+Celulares. mesmo sql id, nome, especificacoes.
+Smartphone Asus Zenfone 3 Preto Safira Tela 5.2 Android 6.0 Câmera 16 MP 16Gb
+Smartphone Motorola Moto G5S Plus Dual Chip Android 7.1.1 Nougat Tela 5.5" Snapdragon 625 32GB 4G 13MP Câmera Dupla - Platinum
+iPhone 6s Plus Apple 32GB Cinza Espacial 4G - Tela 5.5” Retina Câmera 5MP iOS 10 Proc. A9 Wi-Fi.
+
+Roupas. mesmo sql id, nome, especificacoes.
+T-shirt Religious Pattern Branca
+BLUSA MOLETOM CREW FLEECE TREFOIL adidas
+Bermuda Dry TN Against The World Branca
+
+Games. mesmo sql id, nome, especificacoes.
+Far Cry Primal - Limited Edition - PS4
+Mad Max - PS4
+Game God Of War - PS4
+
+funcao carrinho de compras - para ir adicionando ao carrinho - session.
+
+funcao comprar - para finalizar a compra: nome, email, cpf, nascimento, endereco, celular e telefone fixo.
+as compras podem ser parceladas em até 10x sem juros ou 12x com 10% de juros.
+
+status do pedido - foto, id, nome, preco, descricao, deve conter dia de entrega entre os dias uteis.
+
+
+
+Os codigos devem ser armazenados no github
+Deve ser responsivo
+Deve utilizar o framework Bootstrap
+Deve utilizar práticas gerais de codigo seguro
+
+
+
+
+B - Vendedor
+
+cadastro de produtos - mesmo slq da pagina com informacoes.
+
+Alteracao de produtos - mesmo slq da pagina com informacoes.
+
+Exclusão de produtos - mesmo slq da pagina com informacoes.
+
+Ver pedidos feitos - foto, id, nome, preço.
+
+Alterar status do pedido - mesmo sql dos status do pedido.
+
+Cadastro - vendedor.php pagina do vendedor de cadastro dele. cpf, nome, email, endereco, celular, telefone fixo.
+
+Login - loginvendedor.php pagina separada do sql do login do cliente. $email, $senha.
+
