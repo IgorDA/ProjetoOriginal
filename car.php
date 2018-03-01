@@ -24,7 +24,7 @@
 							  	R$<?php echo number_format($product['preco'], 2, ',', '.')?>
 							 </h6>
 
-							 <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']?>" class="card-link">Comprar</a>
+							 <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $product['id']?>" class="card-link">Adicionar ao carrinho</a>
 						</div>
 					</div>
 				</div>

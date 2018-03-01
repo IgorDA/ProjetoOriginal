@@ -1,3 +1,12 @@
+<?php
+
+	include 'header.php';
+	include 'nav.php';
+
+?>
+
+<p>&nbsp;</p>
+
 <?php 
 	session_start();
 	require_once "functions/product.php";
@@ -85,11 +94,22 @@
 			</table>
 
 			<a class="btn btn-info" href="index.php">Continuar Comprando</a>
+			<a class="btn btn-info" href="comprar.php">Finalizar Compra</a>
 		
 
 			</form>
 	<?php endif?>
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
 		
+<?php
+
+include 'footer.php';
+
+?>
+
 	</div>
 	
 </body>
