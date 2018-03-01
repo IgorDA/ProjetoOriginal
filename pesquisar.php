@@ -48,18 +48,30 @@ $total = mysqli_num_rows($resultado);
 <center><h1> Resultados da pesquisa </h1></center>
 
         <?php while($row = mysqli_fetch_assoc($resultado)){ ?>
-          <div class="col-4">
-            <div class="card">
+        <div class="container">
+          <div class="row">
 
-              <div class="card-body">
-          <center>   <img class="imgcar" src="<?php echo $row['foto'] ?>" ></center> 
+          <p>&nbsp;</p>
+          
+            <div class="col-sm-12">
+
+              <div class="card">
+
+                <div class="card-body">
+          <center><img class="imgcar text-center" src="<?php echo $row['foto'] ?>" ></center> 
               <div class="caption text-center">
                 <a href="detalhes.php?id=<?php echo $row['id']; ?>"><h3><?php echo $row['nome']; ?></h3></a>
                 <h2>R$<?php echo number_format($row['preco'], 2, ',', '.')?></h2>
-                 <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $row['id']?>" class="card-link">Comprar</a>
+                 <a class="btn btn-primary" href="carrinho.php?acao=add&id=<?php echo $row['id']?>" class="card-link">Adicionar ao carrinho</a>
             </div>
           </div>
           </div>
-        <?php } ?>
+          </div>
+          </div>
+
+        <?php 
+        }
+        ?>
+
       </div>
     
