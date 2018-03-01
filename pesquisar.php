@@ -52,7 +52,7 @@ $total = mysqli_num_rows($resultado);
           <div class="row">
 
           <p>&nbsp;</p>
-          
+
             <div class="col-sm-12">
 
               <div class="card">
@@ -68,6 +68,14 @@ $total = mysqli_num_rows($resultado);
           </div>
           </div>
           </div>
+
+          <p>&nbsp;</p>
+
+          <?php
+
+            include 'footer.php';
+
+          ?>
 
         <?php 
         }
