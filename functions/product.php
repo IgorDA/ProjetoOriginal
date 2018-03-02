@@ -1,7 +1,7 @@
 <?php 
 
 function getProducts($pdo){
-	$sql = "SELECT *  FROM paginainicial ";
+	$sql = "SELECT *  FROM paginainicial order by id desc limit 3";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 	return $stmt->fetchAll(PDO::FETCH_ASSOC);
