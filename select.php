@@ -1,5 +1,5 @@
 <?php
-session_start(1);
+session_start();
 
 include 'conexao.php';
 

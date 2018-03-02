@@ -15,10 +15,10 @@ INCLUDE "conexao.php";
 	<title></title>
 <script type="text/javascript">
 	function loginsucesso() {
-		setTimeout("window.location ='painel.php' ",5000)
+		setTimeout("window.location ='perfilindex.php' ",2000)
 	}
 	function loginerror(){
-		setTimeout("window.location = 'login.php'",5000)
+		setTimeout("window.location = 'login.php'",2000)
 	}
 </script>
 

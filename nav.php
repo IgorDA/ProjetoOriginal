@@ -28,15 +28,39 @@
         <li class="nav-item">
           <a class="nav-link" href="categoria.php?cat=games">Games</a>
         </li>
+
+       <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            <?php
+
+              session_start();
+              include "conexao.php";
+
+              $email = $_SESSION['email'];
+              $senha = $_SESSION['senha'];
+
+              $sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
+              $result = $conn->query($sql);
+              if ($result->num_rows>0); 
+                while($row = $result->fetch_assoc()){ {
+
+              $_SESSION['nome'] = $row['nome'];
+              echo $_SESSION['nome'];
+
+              }
+            }
+            
+            ?>
+
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="perfil.php">Perfil</a>
+            <a class="dropdown-item" href="carrinho.php">Carrinho</a>
+            <a class="dropdown-item" href="sairdoperfil.php">Desconectar</a>
+          </div>
+        </div>
+        </li>
       </ul>
     <hr class="hr" />
-    
-
-
-
-
-    
-
-
-
 </div>

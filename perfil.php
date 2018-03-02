@@ -47,6 +47,8 @@ $endereco = $row['endereco'];
 	}
 	}
 
+	
+
 ?>
 
 <form method="POST" action="perfil.php"></form>
