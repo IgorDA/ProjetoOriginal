@@ -63,7 +63,7 @@
      <p style="margin-left:2%"><button type="button" class="btn btn-primary"><a class="a" href="login.php">Login</a></button>
        ou  
       <button type="button" class="btn btn-primary"><a class="a" href="cadastro.php">Cadastro</a></button></p>
-      <button type="button" class="btn btn-primary"><a class="a" href="carrinho.php">Seu Carinho</a></button></p>
+      
     </div>
     </div>
     </div>
@@ -73,28 +73,7 @@
    
    
     
-    
-    <div id="popover_content_wrapper" style="display: none">
-
-            <p>Carrinho vazio!</p>
-    
-    
-
-    <div>
-
-            <h5>Total:  R$ 0,00 </h5>
-
-            <a href="#" class="btn btn-primary">
-                <span class="glyphicon glyphicon-shopping-cart"></span> Ver carrinho
-            </a>
-
-            <a href="#" class="btn btn-default">
-                <span class="glyphicon glyphicon-trash"></span> Limpar
-            </a>
-
-    </div>
-
-
+  
 
 
 

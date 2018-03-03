@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-		<title></title>
-
 <?php
- echo " <center ><div class='alert alert-success' role='alert'>
- voce foi conectado com sucesso , espere alguns segundos até ser redirecionado </div></center>" ;
 
- echo "<script>loginsucesso()</script>" ;
+session_start();
 
 
-} 
+    session_destroy();
+    header("Location:index.php");
 
-else {
-	echo "center> nome de usuario ou senha invalido</center>";
-	echo "<script>loginerror()</script>";
-}
+
+
+echo " <a href='index.php'>Sair</a>";
+
+
+
 
 ?>
-</head>
-<body>
-
-</body>
-</html>

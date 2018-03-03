@@ -15,7 +15,7 @@ INCLUDE "conexao.php";
 	<title></title>
 <script type="text/javascript">
 	function loginsucesso() {
-		setTimeout("window.location ='perfilindex.php' ",2000)
+		setTimeout("window.location ='index.php' ",2000)
 	}
 	function loginerror(){
 		setTimeout("window.location = 'login.php'",2000)
