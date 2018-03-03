@@ -19,9 +19,13 @@ session_start();
 
 echo "</br>","</br>";
 $nome = $_SESSION['nome'];
+$email = $_SESSION['email'];
+$celular = $_SESSION['celular'];
 
 echo '<div class="container text-center">';
 echo "$nome",'</br>';
+echo "$email",'</br>';
+echo "$celular",'</br>';
 echo "Conectado com sucesso";
 echo '</div>';
 echo "</br>","</br>";

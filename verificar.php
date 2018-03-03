@@ -36,12 +36,16 @@ $senha = $_POST['senha'];
 
 $sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
 $result = $conn->query($sql);
-if ($result->num_rows>0) {
+if ($result->num_rows>0){
+	while ($row = $result->fetch_assoc())  {
+		
 
+	
  session_start();
 
- $_SESSION['email'] = $_POST['email'];
- $_SESSION['senha'] = $_POST['senha'];
+
+ $_SESSION['email'] = $row['email'];
+ $_SESSION['celular'] = $row['celular'];
 
 
  echo " <center ><div class='alert alert-success' role='alert'>
@@ -49,6 +53,7 @@ if ($result->num_rows>0) {
 
  echo "<script>loginsucesso()</script>" ;
 
+}
 
 } else {
 	echo "center> nome de usuario ou senha invalido</center>";
