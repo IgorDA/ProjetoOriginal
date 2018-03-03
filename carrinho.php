@@ -7,7 +7,8 @@
 
 <p>&nbsp;</p>
 
-<?php 
+<?php
+
 	require_once "functions/product.php";
 	require_once "functions/cart.php";
 

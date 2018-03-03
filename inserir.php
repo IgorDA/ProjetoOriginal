@@ -10,11 +10,6 @@ $telefonefixo = $_POST['telefonefixo'];
 $cpf = $_POST['cpf'];
 $nascimento = $_POST['nascimento'];
 $sexo = $_POST['sexo'];
-,.+
-,
-,
-,
-,
 $endereco = $_POST['endereco'];
 
 $sql = "INSERT INTO cadastro (nome, email, senha, celular, telefonefixo, cpf, nascimento, sexo, endereco) VALUES ('$nome', '$email', '$senha', '$celular', '$telefonefixo', '$cpf', '$nascimento', '$sexo', '$endereco')";
