@@ -1,8 +1,8 @@
 <?php
 
 include 'header.php';
-include 'nav.php';
 
+include 'nav.php';
 ?>
 
   <meta charset="utf-8" />
@@ -13,6 +13,9 @@ include 'nav.php';
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
 
+
+
+
 <?php
 
 
@@ -21,10 +24,12 @@ $nome = $_SESSION['nome'];
 $email = $_SESSION['email'];
 $celular = $_SESSION['celular'];
 
+
 echo '<div class="container text-center">';
 echo "$nome",'</br>';
 echo "$email",'</br>';
 echo "$celular",'</br>';
+
 echo "Conectado com sucesso";
 echo '</div>';
 echo "</br>","</br>";

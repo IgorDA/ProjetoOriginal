@@ -37,6 +37,9 @@ $senha = $_POST['senha'];
 $sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
 $result = $conn->query($sql);
 if ($result->num_rows>0){
+
+
+
 	while ($row = $result->fetch_assoc())  {
 		
 
@@ -47,6 +50,8 @@ if ($result->num_rows>0){
  $_SESSION['email'] = $row['email'];
  $_SESSION['celular'] = $row['celular'];
  $_SESSION['nome'] = $row['nome'];
+
+ 
 
 
  echo " <center ><div class='alert alert-success' role='alert'>

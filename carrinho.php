@@ -1,3 +1,5 @@
+
+
 <?php
 
 	include 'header.php';
@@ -5,10 +7,10 @@
 
 ?>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <?php
-
+      
 	require_once "functions/product.php";
 	require_once "functions/cart.php";
 
@@ -94,14 +96,14 @@
 			</table>
 
 			<a class="btn btn-info" href="index.php">Continuar Comprando</a>
-			<a class="btn btn-info" href="comprar.php">Finalizar Compra</a>
+			<a class="btn btn-info" href="comprar.php?cpf=cpf">Finalizar Compra</a>
 		
 
 			</form>
 	<?php endif?>
 
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	<p> </p>
+	<p> </p>
 	
 		
 <?php
@@ -114,3 +116,5 @@ include 'footer.php';
 	
 </body>
 </html>
+
+
