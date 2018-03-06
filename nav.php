@@ -35,22 +35,13 @@
             <?php
 
               session_start();
+
               include "conexao.php";
 
-              $email = $_SESSION['email'];
-              $senha = $_SESSION['senha'];
-
-              $sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
-              $result = $conn->query($sql);
-              if ($result->num_rows>0); 
-                while($row = $result->fetch_assoc()){ {
-
-              $_SESSION['nome'] = $row['nome'];
+           
               echo $_SESSION['nome'];
 
-              }
-            }
-            
+        
             ?>
 
           </button>

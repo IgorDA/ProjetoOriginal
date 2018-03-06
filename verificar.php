@@ -46,6 +46,7 @@ if ($result->num_rows>0){
 
  $_SESSION['email'] = $row['email'];
  $_SESSION['celular'] = $row['celular'];
+ $_SESSION['nome'] = $row['nome'];
 
 
  echo " <center ><div class='alert alert-success' role='alert'>

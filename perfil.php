@@ -15,7 +15,6 @@ include 'nav.php';
 
 <?php
 
-session_start();
 
 echo "</br>","</br>";
 $nome = $_SESSION['nome'];

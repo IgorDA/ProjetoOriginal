@@ -5,7 +5,7 @@ include "conexao.php";
 
 <?php
 $email = $_POST['email'];
-
+$senha = $_SESSION['senha'];
 $sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
 $result = $conn->query($sql);
 if ($result->num_rows>0) {
