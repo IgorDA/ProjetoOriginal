@@ -46,10 +46,11 @@ if ($result->num_rows>0){
 	
  session_start();
 
-
+$_SESSION['id']=$row['id'];
  $_SESSION['email'] = $row['email'];
  $_SESSION['celular'] = $row['celular'];
  $_SESSION['nome'] = $row['nome'];
+
 
  
 

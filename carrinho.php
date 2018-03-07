@@ -7,7 +7,7 @@
 
 ?>
 
-<p> </p>
+
 
 <?php
       
@@ -96,7 +96,7 @@
 			</table>
 
 			<a class="btn btn-info" href="index.php">Continuar Comprando</a>
-			<a class="btn btn-info" href="comprar.php?cpf=cpf">Finalizar Compra</a>
+			<a class="btn btn-info" href="comprar.php">Finalizar Compra</a>
 		
 
 			</form>
