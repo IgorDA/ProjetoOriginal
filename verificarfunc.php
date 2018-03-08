@@ -15,7 +15,7 @@ INCLUDE "conexao.php";
 	<title></title>
 <script type="text/javascript">
 	function loginsucesso() {
-		setTimeout("window.location ='index.php' ",2000)
+		setTimeout("window.location ='perfilfunc.php' ",2000)
 	}
 	function loginerror(){
 		setTimeout("window.location = 'login.php'",2000)
@@ -33,26 +33,21 @@ INCLUDE "conexao.php";
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-
-$sql=" SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha' ";
-$result = $conn->query($sql);
-if ($result->num_rows>0){
-
-
-
-	while ($row = $result->fetch_assoc())  {
-		
-
-	
  session_start();
-
-$_SESSION['id']=$row['id'];
- $_SESSION['email'] = $row['email'];
- $_SESSION['celular'] = $row['celular'];
- $_SESSION['nome'] = $row['nome'];
+$sql=" SELECT * FROM funcionario WHERE email = '$email' AND senha = '$senha' ";
+$result = $conn->query($sql);
 
 
- 
+if ($result->num_rows>0){
+    while ($row = $result->fetch_assoc())  {
+		
+    $nome =$row['nome'];
+    $cargo = $row['cargo'];
+
+    $_SESSION['email'] = $email;
+    $_SESSION['cargo'] = $cargo;
+    $_SESSION['nome'] = $nome;
+
 
 
  echo " <center ><div class='alert alert-success' role='alert'>
