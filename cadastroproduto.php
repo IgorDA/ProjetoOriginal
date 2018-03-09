@@ -21,52 +21,34 @@
 
 <div class="container">
 
-	<form method="POST" action="inserir.php">
+	<form method="POST" action="inserirproduto.php">
 	  <div class="form-row">
 
 	    <div class="form-group col-md-12">
-	      <label for="inputPassword4">Nome:</label>
-	      <input type="text" class="form-control" name="nome" id="inputPassword4" placeholder="Digite seu nome">
-	    </div>
-	    <div class="form-group col-md-6">
-	      <label for="inputEmail4">Email:</label>
-	      <input type="email"  class="form-control" name="email" id="inputEmail4" placeholder="Email">
-	    </div>
-	    <div class="form-group col-md-6">
-	      <label for="inputPassword4">Senha:</label>
-	      <input type="password"  class="form-control" name="senha" id="inputPassword4" placeholder="Senha">
-	    </div>
-	    <div class="form-group col-md-6">
-	      <label for="inputEmail4">Celular:</label>
-	      <input type="text" class="form-control" name="celular" id="inputEmail4" placeholder="Digite seu celular">
-	    </div>
-	    <div class="form-group col-md-6">
-	      <label for="inputEmail4">Telefone Fixo:</label>
-	      <input type="text" class="form-control" name="telefonefixo" id="inputEmail4" placeholder="Digite seu telefone fixo">
+	      <label >Nome:</label>
+	      <input type="text" class="form-control" name="nome" placeholder="Nome do produto">
 	    </div>
 	    <div class="form-group col-md-12">
-	      <label for="inputPassword4">CPF:</label>
-	      <input type="text" class="form-control" name="cpf" id="inputPassword4" placeholder="Digite seu CPF">
+	      <label >preco:</label>
+	      <input type="number"  class="form-control" name="preco"  placeholder="preco">
 	    </div>
+	   	<div class="form-group  col-md-12"">
+			<label for="categoria">categoria </label>
+			<select name="categoria" class="form-control form-control-lg">
+				<option value="celulares">celulares</option>
+				<option value="informatica">informatica</option>
+				<option value="eletronicos">eletronicos</option>
+				<option value="roupas">roupas</option>
+				<option value="livros">livros</option>
+				<option value="games">games</option>
+			</select>
+		</div>
 	    <div class="form-group col-md-12">
-	      <label for="inputPassword4">Nascimento:</label>
-	      <input type="date" class="form-control" name="nascimento" id="inputPassword4">
+	      <label >foto:</label>
+	      <input type="text" class="form-control" name="foto"  placeholder="nome do arquivo da foto">
 	    </div>
-	  </div>
-
-	  <div class="form-group">
-	    <label for="inputAddress">Sexo:</label>
-      <select id="inputState" class="form-control" name="sexo">
-        <option selected>Selecione...</option>
-        <option>Masculino</option>
-        <option>Feminino</option>
-      </select>
-	  </div>
-	  <div class="form-group">
-	    <label for="inputAddress">Endereço:</label>
-	    <input type="text" class="form-control" name="endereco" id="inputAddress" placeholder="Digite seu endereço">
-	  </div>
-	  <a href="inserir.php"><button type="submit" class="btn btn-primary">Cadastrar</button></a>
+	    
+	 <button type="submit" class="btn btn-primary">Cadastrar</button>
 	</form>
 	<p>&nbsp;</p>
 
