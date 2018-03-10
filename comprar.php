@@ -6,6 +6,33 @@ include "nav.php";
 ?>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
 
 include "conexao.php";
@@ -17,27 +44,70 @@ $result = $conn->query($sql);
 if ($result->num_rows>0){
     while ($row = $result->fetch_assoc())  {
 		
+$nome = $row['nome'];
+
 $telefonefixo =$row['telefonefixo'];
 $email = $row['email'];
 $celular = $row['celular'];
 $endereco = $row['endereco'];
 $cpf = $row['cpf'];
 
-echo "<div class='container text-center'>
-<h4>Email:</h4>
-<h3> $email </h3>","</br>";
 
-echo '<h4>Celular:</h4>',
-"<h3> $celular </h3>","</br>";
 
-echo '<h4>Telefone Fixo:</h4>',
-"<h3> $telefonefixo </h3>","</br>";
 
-echo '<h4>Endereço:</h4>',
-"<h3> $endereco </h3>","</br>";
+echo "<form method='POST' action='insertpedido.php'>";
 
-echo '<h4>CPF:</h4>',
-"<h3> $cpf </h3>","</br>";
+echo "<div class='container '>
+
+<h1> Confirme seu dados</h1>
+<h4>Nome:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='nome' value=' $nome' class='form-control form-control-lg'/>     
+		</div>";
+
+echo "<h4>email:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='email' value=' $email' class='form-control form-control-lg'/>     
+		</div>";
+
+
+echo "<h4>cpf:</h4>";
+
+
+  echo "<div class=' form-group col-md-12'>
+			
+			<input type='text' name='cpf' value=' $cpf' class='form-control form-control-lg'/>     
+		</div>";
+
+
+echo "<h4>celular:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='celular' value=' $celular' class='form-control form-control-lg'/>     
+		</div>";
+
+
+echo "<h4>Endereco:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='endereco' value=' $endereco' class='form-control form-control-lg'/>     
+		</div>";
+
+
+
+
+
+
 
 
 
@@ -53,10 +123,6 @@ echo '<h4>CPF:</h4>',
 	}
 } 
 
-else {
-	echo "center> nome de usuario ou senha invalido</center>";
-	echo "<>loginerror()</>";
-}
 
 ?>
 
@@ -155,10 +221,11 @@ else {
 			</table>
 
 			
-			<a class="btn btn-info" href="insertpedido.php">Finalizar Compra</a>
+		<?php	echo 	"<a class='btn btn-info' href='insertpedido.php'>Finalizar Compra</a>
 		
 
-			</form>
+			</form>";
+			 ?>
 	<?php endif?>
 
 	<p> </p>
@@ -175,7 +242,7 @@ else {
 
 
 
-?>
+
 
 
 

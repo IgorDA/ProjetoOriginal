@@ -3,23 +3,23 @@
 include 'conexao.php';
 
 $nome = $_POST['nome'];
-$foto = $_POST['foto'];
-$preco = $_POST['preco'];
-$categoria = $_POST['categoria'];
+$endereco = $_POST['endereco'];
+$celular = $_POST['celular'];
+$cpf = $_POST['cpf'];
 
-$sql = "INSERT INTO paginainicial (nome, foto, preco, categoria) VALUES ('$nome', '$foto', '$preco', '$categoria')";
+$sql = "INSERT INTO pedido (nome,endereco,celular, cpf ) VALUES ('$nome', '$endereco', '$celular', '$cpf')";
 
 if($conn->query($sql) === TRUE){
 
 	include 'header.php';
 	include 'nav.php';
 	echo "<div class='container text-center'></br>
-	Produto inserido com sucesso !!!
+	COMPRA EFETUADA COM SUCESSO !!!
 	
 	</div></br>";
 	include 'footer.php';
 
-header('refresh: 2, cadastroproduto.php');
+header('refresh: 2, status.php');
 
 }
 
