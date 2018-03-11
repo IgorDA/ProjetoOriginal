@@ -14,7 +14,7 @@
 
 <div class="container">
 	<p>&nbsp;</p>
-	<h3 class="text-center">Cadastro</h3>
+	<h3 class="text-center">Cadastro de produtos</h3>
 	<hr />
 	<p>&nbsp;</p>
 </div>
@@ -29,11 +29,11 @@
 	      <input type="text" class="form-control" name="nome" placeholder="Nome do produto">
 	    </div>
 	    <div class="form-group col-md-12">
-	      <label >preco:</label>
-	      <input type="number"  class="form-control" name="preco"  placeholder="preco">
+	      <label >Preço:</label>
+	      <input type="number"  class="form-control" name="preco"  placeholder="preço do produto">
 	    </div>
 	   	<div class="form-group  col-md-12"">
-			<label for="categoria">categoria </label>
+			<label for="categoria">Categoria </label>
 			<select name="categoria" class="form-control form-control-lg">
 				<option value="celulares">celulares</option>
 				<option value="informatica">informatica</option>
@@ -44,15 +44,29 @@
 			</select>
 		</div>
 	    <div class="form-group col-md-12">
-	      <label >foto:</label>
+	      <label >Foto:</label>
 	      <input type="text" class="form-control" name="foto"  placeholder="nome do arquivo da foto">
 	    </div>
+
+
+
+
+
+
+
+
+
+
+
 	    
 	 <button type="submit" class="btn btn-primary">Cadastrar</button>
 	</form>
 	<p>&nbsp;</p>
 
 </div>
+<br><a  type="submit" class="btn btn-primary  " href="perfilfunc.php"> Voltar ! </a></br>
+</div>
+
 
 </body>
 </html>

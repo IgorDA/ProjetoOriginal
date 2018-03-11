@@ -45,7 +45,7 @@
           
         <input class="form-control mr-sm-4" type="text" name="pesquisar"  id=  "exampleInputName2" placeholder="Pesquise aqui..." aria-label="Search"></br>
 
-         <button type="subimit" class="btn btn-primary">Pesquisar</button></p>
+         <button type="submit" >Pesquisar</button></p>
       </form>
     </div>
 
@@ -60,10 +60,9 @@
 
 
     <div class="col-md-2" style="margin-top:5%;">
-     <p style="margin-left:2%"><button type="button" class="btn btn-primary"><a class="a" href="login.php">Login</a></button>
+    <a class="primary" href="login.php">Login</a>
        ou  
-      <button type="button" class="btn btn-primary"><a class="a" href="cadastro.php">Cadastro</a></button></p>
-      
+      <a class="primary" href="cadastro.php">Cadastro</a>
     </div>
     </div>
     </div>

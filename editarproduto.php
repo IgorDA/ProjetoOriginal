@@ -24,14 +24,14 @@ $result = $conn->query($sql);
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-    <title>NOME DA EMPRESA</title>
+    <title>e-Commerce</title>
   </head>
   <body>
     
 
     <div class="container">
 		<section>
-		<h1>Atualize o produto</h1><hr />
+		<h1>Atualização de dados do produto</h1><hr />
 
 
 		<form method="POST" action="updateproduto.php">
@@ -58,11 +58,16 @@ $result = $conn->query($sql);
     </div>
 
      
-   <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+   <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
 
    	</form>
 		</section>
 	</div>
+  <div class="container">
+    
+  <button  type="submit" class="btn btn-success  " href="perfilfunc.php"> Voltar ! </button>
+</div>
+  
 
 
     <!-- Optional JavaScript -->

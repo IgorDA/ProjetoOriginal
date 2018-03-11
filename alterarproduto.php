@@ -29,7 +29,8 @@ if($result->num_rows>0){
         
   }
   echo "</select>";
-  echo "</br><button type = 'submit' class='btn btn-dark btn-sm' > EDITAR </button> </div> " ;
+  echo "</br><button type = 'submit' class='btn btn-primary btn-sm' > EDITAR </button> </div> " ;
+  echo"   </br><a type = 'submit' class='btn btn-primary btn-md' href='perfilfunc.php' > voltar </a> </div>"; 
   echo "</form> </div>";
 
 }

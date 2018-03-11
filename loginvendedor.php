@@ -15,7 +15,7 @@
 <body>
 
 	<div class="container">
-		<h3 class="text-center">Login</h3>
+		<h3 class="text-center">Ola, vendedor, faça seu login logo abaixo</h3>
 		<hr />
 		<p>&nbsp;</p>
 	</div>

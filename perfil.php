@@ -19,6 +19,9 @@ include 'nav.php';
 <?php
 
 
+
+
+
 echo "</br>","</br>";
 $nome = $_SESSION['nome'];
 $email = $_SESSION['email'];
