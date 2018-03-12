@@ -1,48 +1,143 @@
 <?php
 
-include 'header.php';
+include "header.php";
+include "nav.php";
 
-include 'nav.php';
 ?>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 <?php
 
+include "conexao.php";
 
-
-
-
-echo "</br>","</br>";
 $nome = $_SESSION['nome'];
-$email = $_SESSION['email'];
-$celular = $_SESSION['celular'];
+
+$sql=" SELECT * FROM cadastro WHERE nome= '$nome'";
+$result = $conn->query($sql);
+if ($result->num_rows>0){
+    while ($row = $result->fetch_assoc())  {
+		
+$nome = $row['nome'];
+
+$telefonefixo =$row['telefonefixo'];
+$email = $row['email'];
+$celular = $row['celular'];
+$endereco = $row['endereco'];
+$nascimento = $row['nascimento'];
+$sexo = $row['sexo'];
+$cpf = $row['cpf'];
 
 
-echo '<div class="container text-center">';
-echo "$nome",'</br>';
-echo "$email",'</br>';
-echo "$celular",'</br>';
 
-echo "Conectado com sucesso";
-echo '</div>';
-echo "</br>","</br>";
 
-	
-	include 'conexao.php';
+
+echo "<div class='container '>
+
+<h1> Seus Dados </h1>
+<h4>Nome:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='nome' value=' $nome' class='form-control form-control-md'/>     
+		</div>";
+
+echo "<h4>email:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='email' value=' $email' class='form-control form-control-md'/>     
+		</div>";
+
+
+echo "<h4>CPF:</h4>";
+
+
+  echo "<div class=' form-group col-md-12'>
+			
+			<input type='text' name='cpf' value=' $cpf' class='form-control form-control-md'/>     
+		</div>";
+
+
+echo "<h4>celular:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='celular' value=' $celular' class='form-control form-control-md'/>     
+		</div>";
+
+
+echo "<h4>Endereco:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='endereco' value=' $endereco' class='form-control form-control-md'/>     
+		</div>";
+
+echo "<h4>Data de nascimento:</h4>";
+
+
+  echo "<div class='form-group col-md-12'>
+			
+			<input type='text' name='nascimento' value=' $nascimento' class='form-control form-control-md'/>     
+		</div>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+} 
+
+
 ?>
 
-<?php
 
-include 'footer.php';
+<?php
+include "footer.php";
 
 ?>

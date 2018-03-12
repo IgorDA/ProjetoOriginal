@@ -45,8 +45,7 @@
           
         <input class="form-control mr-sm-4" type="text" name="pesquisar"  id=  "exampleInputName2" placeholder="Pesquise aqui..." aria-label="Search"></br>
 
-         <button type="submit" >Pesquisar</button></p>
-      </form>
+         <button type="submit" >Pesquisar</button>          </form>
     </div>
 
       </div>
