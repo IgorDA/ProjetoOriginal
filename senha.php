@@ -6,33 +6,6 @@ include "nav.php";
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 include "conexao.php";
@@ -45,21 +18,12 @@ if ($result->num_rows>0){
     while ($row = $result->fetch_assoc())  {
 		
 $nome = $row['nome'];
-
-
 $senha = $row['senha'];
 
 
+echo "<div class='container>"
 
-
-
-echo "<div class='container '>"
-
-;
-
-
- 
-		echo "<h4>digite sua Senha antiga</h4>";
+		echo "<h4>Digite sua Senha antiga</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -71,44 +35,24 @@ echo "<div class='container '>"
 
 
 echo "<form method='POST' action='updatedados.php'>";
-echo "<h4>digite sua nova senha</h4>";
+echo "<h4>Digite Sua Nova Senha</h4>";
 
  echo "<div class='form-group col-md-12'>
 			
 			<input type='text' name='senhanova'  class='form-control form-control-md'/> ";
 
  echo "<button type='submit' class='btn btn-primary'>trocar Senha</button></a>
-	</form>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</form>
+	</div>";
 
 	}
 } 
-
 
 ?>
 
 
 <?php
+
 include "footer.php";
 
 ?>

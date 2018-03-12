@@ -6,33 +6,6 @@ include "nav.php";
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 include "conexao.php";
@@ -59,14 +32,12 @@ $senha = $row['senha'];
 
 
 
-echo "<div class='container '>
-
-
+echo "<div class='container'>
 
 <center><h1> Olá $nome </h1></center>
 
-<h3> Seus Dados </h3>
-<h4>Nome completo</h4>";
+<h3>Seus Dados</h3>
+<h4>Nome Completo</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -74,7 +45,7 @@ echo "<div class='container '>
 			<input type='text' name='nome' value=' $nome' class='form-control form-control-md'/>     
 		</div>";
 
-echo "<h4>email</h4>";
+echo "<h4>Email:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -83,7 +54,7 @@ echo "<h4>email</h4>";
 		</div>";
 
 
-echo "<h4>CPF</h4>";
+echo "<h4>CPF:</h4>";
 
 
   echo "<div class=' form-group col-md-12'>
@@ -92,7 +63,7 @@ echo "<h4>CPF</h4>";
 		</div>";
 
 
-echo "<h4>celular</h4>";
+echo "<h4>Celular:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -101,7 +72,7 @@ echo "<h4>celular</h4>";
 		</div>";
 
 
-echo "<h4>Endereco</h4>";
+echo "<h4>Endereço:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -109,7 +80,7 @@ echo "<h4>Endereco</h4>";
 			<input type='text' name='endereco' value=' $endereco' class='form-control form-control-md'/>     
 		</div>";
 
-echo "<h4>Data de Nascimento</h4>";
+echo "<h4>Data de Nascimento:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -117,7 +88,7 @@ echo "<h4>Data de Nascimento</h4>";
 			<input type='text' name='nascimento' value=' $nascimento' class='form-control form-control-md'/>     
 		</div>";
 
-		echo "<h4>Senha</h4>";
+		echo "<h4>Senha:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
@@ -126,26 +97,6 @@ echo "<h4>Data de Nascimento</h4>";
 
 		 <a href ='senha.php' > Trocar sua senha </a>    
 		</div>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 } 

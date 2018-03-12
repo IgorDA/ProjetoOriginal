@@ -6,33 +6,6 @@ include "nav.php";
 ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 include "conexao.php";
@@ -41,57 +14,53 @@ $nome = $_SESSION['nome'];
 
 $sql=" SELECT * FROM cadastro WHERE nome= '$nome'";
 $result = $conn->query($sql);
-if ($result->num_rows>0){
-    while ($row = $result->fetch_assoc())  {
+	if ($result->num_rows>0){
+    	while ($row = $result->fetch_assoc())  {
 		
 $nome = $row['nome'];
-
-$telefonefixo =$row['telefonefixo'];
+$telefonefixo = $row['telefonefixo'];
 $email = $row['email'];
 $celular = $row['celular'];
 $endereco = $row['endereco'];
 $cpf = $row['cpf'];
 
-
-
-
 echo "<form method='POST' action='insertpedido.php'>";
 
 echo "<div class='container '>
 
-<h1> Confirme seu dados</h1>
+<h1> Confirme seus dados</h1></br>
 <h4>Nome:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
 			
-			<input type='text' name='nome' value=' $nome' class='form-control form-control-lg'/>     
+			<input type='text' name='nome' value='$nome' class='form-control form-control-lg'/>     
 		</div>";
 
-echo "<h4>email:</h4>";
+echo "<h4>Email:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
 			
-			<input type='text' name='email' value=' $email' class='form-control form-control-lg'/>     
+			<input type='text' name='email' value='$email' class='form-control form-control-lg'/>     
 		</div>";
 
 
-echo "<h4>cpf:</h4>";
+echo "<h4>CPF:</h4>";
 
 
   echo "<div class=' form-group col-md-12'>
 			
-			<input type='text' name='cpf' value=' $cpf' class='form-control form-control-lg'/>     
+			<input type='text' name='cpf' value='$cpf' class='form-control form-control-lg'/>     
 		</div>";
 
 
-echo "<h4>celular:</h4>";
+echo "<h4>Celular:</h4>";
 
 
   echo "<div class='form-group col-md-12'>
 			
-			<input type='text' name='celular' value=' $celular' class='form-control form-control-lg'/>     
+			<input type='text' name='celular' value='$celular' class='form-control form-control-lg'/>     
 		</div>";
 
 
@@ -100,41 +69,13 @@ echo "<h4>Endereco:</h4>";
 
   echo "<div class='form-group col-md-12'>
 			
-			<input type='text' name='endereco' value=' $endereco' class='form-control form-control-lg'/>     
+			<input type='text' name='endereco' value='$endereco' class='form-control form-control-lg'/>     
 		</div>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 } 
 
-
 ?>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -168,11 +109,13 @@ echo "<h4>Endereco:</h4>";
 	$resultsCarts = getContentCart($pdoConnection);
 	$totalCarts  = getTotalCart($pdoConnection);
 
-
 ?>
+
+
 <!DOCTYPE html>
 
 <head>
+
 	<meta charset="UTF-8">
 	<title>E-commerce</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
@@ -223,33 +166,18 @@ echo "<h4>Endereco:</h4>";
 			
 		<?php	echo 	"<a class='btn btn-info' href='insertpedido.php'>Finalizar Compra</a>
 		
-
 			</form>";
+
 			 ?>
 	<?php endif?>
 
 	<p> </p>
 	<p> </p>
 	
-		
-
 	</div>
 	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php 
